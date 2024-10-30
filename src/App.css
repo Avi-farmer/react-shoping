@@ -1,0 +1,104 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.831);
+  color: aliceblue;
+}
+.sidenav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88vh;
+  position: sticky;
+  top: 0;
+}
+.navbar1 li{
+  list-style: none;
+  padding: 10px;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+.loginpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+.data{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.data1{
+  border: 2px solid black;
+  margin: 2px;
+  height: 260px;
+  width: 180px;
+}
+.data1 img{
+  height: 150px;
+  width: 150px;
+}
+.dataimage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageproduct{
+  border: 3px solid black;
+  height: 500px;
+}
+.selectitems{
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  margin-top: 12px;
+}
+.allimages{
+  display: flex;
+  justify-content: space-around;
+}
+.buttonplace{
+  display: flex;
+  justify-content: end;
+}
+.productimage{
+  height: 550px;
+  width: 90%;
+}
+.buybtn{
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+.cartbtn{
+  background-color: rgb(255, 128, 0);
+  color: white;
+  font-weight: bold;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+.grpbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index{
+  font-weight: bold;
+  margin-right: 30px;
+}
