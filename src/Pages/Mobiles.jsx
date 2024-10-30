@@ -1,11 +1,13 @@
 import React from 'react'
 import { products } from '../data/ProductsData'
 import { Link } from 'react-router-dom'
+import Header from '../Components/Header'
 
 function Mobiles() {
     const mobiles = products.slice(0, 20)
     return (
         <>
+        <Header/>
             <div className='data'>
                 {
                     mobiles.map(e => (

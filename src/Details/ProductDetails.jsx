@@ -5,6 +5,7 @@ import Header from '../Components/Header';
 import { Col, Row } from 'react-bootstrap';
 import { MdShoppingCart } from "react-icons/md";
 import { ImPower } from "react-icons/im";
+import { FaStar } from "react-icons/fa6";
 function ProductDetails() {
   const { id } = useParams();
   const productDetail = products.find(mobile => mobile.id === Number(id));
@@ -13,22 +14,25 @@ function ProductDetails() {
       <Header />
       <Row>
         <Col sm={5}>
-          <img className='productimage' src={productDetail.images} alt={productDetail.brand} />
-          <div className='grpbtn'>
-            <button className='cartbtn'><MdShoppingCart />Add To Cart</button>
-            <button className='buybtn'><ImPower />Buy Now</button>
+          <div className='imagefixed'>
+            <img className='productimage' src={productDetail.images} alt={productDetail.brand} />
+            <div className='grpbtn'>
+              <button className='cartbtn'><MdShoppingCart />Add To Cart</button>
+              <button className='buybtn'><ImPower />Buy Now</button>
+            </div>
           </div>
         </Col>
         <Col sm={7}>
-          <h1>{productDetail.brand}</h1>
-          <h5>Price: {productDetail.price}/-</h5>
+          <h3>{productDetail.title}</h3>
+          <h3><span className='me-3'>Price:</span>₹{productDetail.price}</h3>
+          <p className='rating'>{productDetail.rating}<FaStar /></p>
+          <dt className='text-success'>Special price</dt>
           <p>{productDetail.description}</p>
-          <ul style={{ listStyle: "none", padding: 0 }}>
+          <ul>
             {productDetail.Specifications.map((spec, index) => (
-              <li key={index} style={{ marginBottom: "10px" }}>{spec}</li>
+              <li className='index' key={index}>{spec}</li>
             ))}
           </ul>
-
         </Col>
       </Row>
     </div>

@@ -7,6 +7,9 @@
   display: flex;
   background-color: rgba(0, 0, 0, 0.831);
   color: aliceblue;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .sidenav{
   display: flex;
@@ -100,5 +103,19 @@
 }
 .index{
   font-weight: bold;
-  margin-right: 30px;
+  list-style: none;
+}
+.imagefixed{
+  position: sticky;
+  top: 50px;
+}
+.rating{
+  background-color: rgb(5, 55, 5);
+  color: aliceblue;
+  width: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
